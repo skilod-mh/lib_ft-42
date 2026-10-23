@@ -6,19 +6,28 @@
 /*   By: mohoussa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 09:30:49 by mohoussa          #+#    #+#             */
-/*   Updated: 2026/10/16 09:39:06 by mohoussa         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:34:07 by mohoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strrchr(const char *s, int c)
+#include <stdlib.h>
+
+char	*ft_strrchr(const char *s, int c)
 {
-	while(s)
+	int	i;
+
+	i = 0;
+	while (s[i])
 	{
-		s++;
+		i++;
 	}
-	while (s)
+	while (i >= 0)
 	{
-		if (*s == c)
-			return (c);
+		if ((char)c == s[i])
+		{
+			return ((char *)&s[i]);
+		}
+		i--;
 	}
+	return (NULL);
 }

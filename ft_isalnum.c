@@ -6,12 +6,12 @@
 /*   By: mohoussa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:35:54 by mohoussa          #+#    #+#             */
-/*   Updated: 2026/10/12 12:01:59 by mohoussa         ###   ########.fr       */
+/*   Updated: 2026/10/22 15:18:32 by mohoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <ctype.h>*/
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

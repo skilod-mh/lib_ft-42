@@ -6,10 +6,12 @@
 /*   By: mohoussa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:04:56 by mohoussa          #+#    #+#             */
-/*   Updated: 2026/10/16 11:52:57 by mohoussa         ###   ########.fr       */
+/*   Updated: 2026/10/22 12:04:31 by mohoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+#include <stddef.h>
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;
