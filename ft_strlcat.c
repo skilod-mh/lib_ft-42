@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mohoussa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mohoussa <mohoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 10:30:19 by mohoussa          #+#    #+#             */
-/*   Updated: 2026/10/23 10:16:44 by mohoussa         ###   ########.fr       */
+/*   Updated: 2026/10/25 21:27:09 by mohoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stddef.h>
-//#include "libft.h"
-#include <bsd/string.h>
-size_t	ft_strlen (const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -23,6 +22,7 @@ size_t	ft_strlen (const char *s)
 		i++;
 	return (i);
 }
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -44,14 +44,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	dst[i] = '\0';
 	return (dst_len + ft_strlen(src));
-}
-int main ()
-{
-	char s[3] = "i";
-	char t[5] = "amine";
-	printf("%zu",strlcat(s,t,10));
-	 char r[3] = "ami";
-        char z[5] = "amine";
-	printf("%zu",ft_strlcat(r,z,10));
-	return (0);
 }
