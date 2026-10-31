@@ -6,7 +6,7 @@
 /*   By: mohoussa <mohoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 11:18:48 by mohoussa          #+#    #+#             */
-/*   Updated: 2026/10/26 12:26:24 by mohoussa         ###   ########.fr       */
+/*   Updated: 2026/10/30 16:29:07 by mohoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,4 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+

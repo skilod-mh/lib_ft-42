@@ -6,13 +6,13 @@
 /*   By: mohoussa <mohoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 13:56:12 by mohoussa          #+#    #+#             */
-/*   Updated: 2026/10/24 19:39:17 by mohoussa         ###   ########.fr       */
+/*   Updated: 2026/10/29 14:17:05 by mohoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
-static	size_t ft_wordlen(const char *s ,char c)
+
+static size_t	ft_wordlen(const char *s, char c)
 {
 	size_t	len;
 
@@ -21,6 +21,7 @@ static	size_t ft_wordlen(const char *s ,char c)
 		len++;
 	return (len);
 }
+
 static	size_t	ft_count(const char *s, char c)
 {
 	size_t	i;
@@ -38,6 +39,7 @@ static	size_t	ft_count(const char *s, char c)
 	}
 	return (count);
 }
+
 static char	*ft_word(const char *start, size_t len)
 {
 	char	*word;
@@ -49,6 +51,7 @@ static char	*ft_word(const char *start, size_t len)
 	word[len] = '\0';
 	return (word);
 }
+
 static char	**ft_free(char **res, size_t n)
 {
 	while (n > 0)
@@ -59,6 +62,7 @@ static char	**ft_free(char **res, size_t n)
 	free(res);
 	return (NULL);
 }
+
 char	**ft_split(const char *s, char c)
 {
 	char	**res;
@@ -68,8 +72,8 @@ char	**ft_split(const char *s, char c)
 
 	if (!s)
 		return (NULL);
-	n = ft_count(s,c);
-	res = malloc( sizeof(char*) * (n + 1));
+	n = ft_count(s, c);
+	res = malloc(sizeof(char *) * (n + 1));
 	if (!res)
 		return (NULL);
 	i = 0;
@@ -77,8 +81,8 @@ char	**ft_split(const char *s, char c)
 	{
 		while (*s == c)
 			s++;
-		len = ft_wordlen(s,c);
-		res[i] = ft_word(s,len);
+		len = ft_wordlen(s, c);
+		res[i] = ft_word (s, len);
 		if (!res[i])
 			return (ft_free(res, i));
 		s = s + len;
@@ -86,9 +90,4 @@ char	**ft_split(const char *s, char c)
 	}
 	res[i] = NULL;
 	return (res);
-}
-#include <stdio.h>
-int	main ()
-{
-	printf("%d",ft_count(",,,,,,hel,,,lo,world,im here",','));
 }

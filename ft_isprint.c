@@ -20,13 +20,3 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-/*#include <stdio.h>
-int main ()
-{
-	char c;
-	c = ;
-	if (ft_isprint(c))
-	printf("%c true",c);
-	else
-		printf("%c not false",c);
-}*/

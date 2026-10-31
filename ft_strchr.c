@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
 	char	cc;
@@ -19,21 +19,15 @@ char	*ft_strchr(const char *s, int c)
 	cc = (char) c;
 	while (*s)
 	{
-		if (cc ==*s)
+		if (cc == *s)
 		{
 			return ((char *)s);
 		}
 		s++;
 	}
-	    if (*s == cc)
-                {
-                        return ((char *)s);
-                }
+	if (*s == cc)
+	{
+		return ((char *)s);
+	}
 	return (NULL);
 }
-/*#include<stdio.h>
-int main ()
-{
-	char s[]= "hello @world";
-	printf("here is the substring %s",ft_strchr(s,'\0'));
-}*/

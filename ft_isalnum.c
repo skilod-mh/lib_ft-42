@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <ctype.h>*/
+
 #include "libft.h"
 
 int	ft_isalnum(int c)
@@ -21,19 +21,6 @@ int	ft_isalnum(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 		return (0);
 }
-/*int	main ()
-{
-	char c = '9';
-	if (isalnum(c))
-		printf (" %c true\n", c);
-	else 
-		printf ("%c not \n",c);
-        if (ft_isalnum(c))
-                printf (" %c true\n", c);
-        else
-                printf ("%c not \n",c);
-}*/
-

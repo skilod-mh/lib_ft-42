@@ -27,8 +27,8 @@ int	ft_strlen(const char*s)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*p;
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;
@@ -50,12 +50,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	p[i] = '\0';
 	return (p);
-}
-
-#include <stdio.h>
-int main()
-{
-	char s1[] = "";
-	char s2[] = "world";
-	printf("%s\n",ft_strjoin(s1,s2));
 }

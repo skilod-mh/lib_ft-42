@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
@@ -24,21 +23,13 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	while (i < len && s1[i])
 	{
 		j = 0;
-		while (s1[i + j] == s2[j] && (i + j) < len&& s2[j])
+		while (s1[i + j] == s2[j] && (i + j) < len && s2[j])
 		{
 			j++;
 		}
 		if (s2[j] == '\0')
-			return ((char*)&s1[i]);
+			return ((char *)&s1[i]);
 		i++;
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
-int main ()
-{
-	char s1[] = "hello world";
-	char s2[] = "world";
-	printf ("%s",ft_strnstr(s1,s2,11));
-}
-*/

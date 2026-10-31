@@ -13,25 +13,11 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') 
+	if ((c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
-	else 
+	else
 		return (0);
 }
-/*int	main ()
-{
-	char c;
-
-	c = 's';
-	if (isalpha(c))
-	{
-		printf("%c is alpha", c);
-	}
-	else 
-	{
-		printf("%c is not alpha", c );
-	}
-}*/
