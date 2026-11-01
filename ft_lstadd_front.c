@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mohoussa <mohoussa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mohoussa <mohoussa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 12:27:18 by mohoussa          #+#    #+#             */
 /*   Updated: 2026/10/27 11:53:45 by mohoussa         ###   ########.fr       */

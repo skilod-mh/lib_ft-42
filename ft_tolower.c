@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mohoussa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mohoussa <mohoussa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 11:45:48 by mohoussa          #+#    #+#             */
 /*   Updated: 2026/10/14 11:47:47 by mohoussa         ###   ########.fr       */

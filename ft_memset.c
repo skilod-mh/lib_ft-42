@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mohoussa <mohoussa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mohoussa <mohoussa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:18:56 by mohoussa          #+#    #+#             */
 /*   Updated: 2026/10/27 18:00:33 by mohoussa         ###   ########.fr       */
